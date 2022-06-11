@@ -50,10 +50,10 @@
             var currentTime = new Date();
             var currentHour = currentTime.getHours();
             var Hour = 0;
-            if (currentHour >= 5) { Hour = 1; }
-            if (currentHour >= 10) { Hour = 2; }
+            if (currentHour >= 2) { Hour = 1; }
+            if (currentHour >= 8) { Hour = 2; }
             if (currentHour >= 15) { Hour = 3; }
-            if (currentHour >= 20) { Hour = 0; }
+            if (currentHour >= 22) { Hour = 0; }
 
             //alert(Hour + ' goes to: ' + SpecialRedirectURL[Hour]); (this was just for testing)
             window.location.href = SpecialRedirectURL[Hour];
